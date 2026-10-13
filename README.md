@@ -12,7 +12,9 @@ I built it with AI-assisted development (Claude Code) on top of the open-source 
 
 ## Demo Video
 
-[Watch the demo video (3 min)](assets/demo/demo.mp4): the blog post for the keyword "best country to study nursing abroad" being generated in Claude Code, then the finished post opened in the browser.
+**[▶ Watch the demo video on Google Drive (3 min)](https://drive.google.com/file/d/1oo0ndnS83VgVqo-xqc7T9qlrmB7sQEhC/view?usp=sharing)**
+
+The video shows the blog post for the keyword "best country to study nursing abroad" being generated in Claude Code, then the finished post opened in the browser. A compressed copy is also in the repo at [`assets/demo/demo.mp4`](assets/demo/demo.mp4).
 
 ## Live Blogs Generated With This Project
 
