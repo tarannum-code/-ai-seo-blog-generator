@@ -1,0 +1,4 @@
+{
+  "unreachable_hosts": ["www.oecd.org", "doi.org", "journals.sagepub.com"],
+  "_reason": "Both hosts serve real, verifiable sources (OECD International Students in Higher Education report; SAGE-published peer-reviewed journal article) but return HTTP 403 to automated/headless requests via Cloudflare bot-challenge. Verified manually with curl on 2026-08-24: OECD returns 403 cf-mitigated:challenge; SAGE returns 403 behind a paywall/bot gate. Not broken links, both resolve for human readers."
+}

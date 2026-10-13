@@ -1,0 +1,41 @@
+{
+  "draft": "drafts/global-academic-success",
+  "strict": false,
+  "blocked": false,
+  "gates": [
+    {
+      "gate": 5,
+      "name": "Asset + Link Integrity",
+      "passed": true,
+      "violations": [],
+      "warnings": [],
+      "imgs": [
+        "hero.jpg",
+        "./images/inline-2-library.jpg",
+        "./images/inline-1-lecture-hall.jpg",
+        "./images/inline-3-lab.jpg"
+      ],
+      "links_checked": 22,
+      "json_ld_valid": true,
+      "declared_word_count": 2496,
+      "schema_validation_source": "source_html",
+      "actual_word_count": 2496,
+      "googlebot_byte_check": {
+        "limit_bytes": 2097152,
+        "artifact_bytes": 31130,
+        "critical_positions": {
+          "title": 297,
+          "meta": 375,
+          "canonical": 624,
+          "json_ld": 2459,
+          "main_content": 6606
+        },
+        "critical_after_cutoff": [],
+        "inline_bloat_bytes": 4130
+      },
+      "discover_check": {
+        "enabled": false
+      }
+    }
+  ]
+}

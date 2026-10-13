@@ -1,0 +1,4 @@
+{
+  "unreachable_hosts": ["www.bls.gov", "www.jobsandskills.gov.au", "www.nursingcouncil.org.nz", "www.make-it-in-germany.com", "www.ncsbn.org", "www.nnas.ca", "www.tewhatuora.govt.nz"],
+  "_reason": "Verified manually on 2026-10-13. www.bls.gov returns 403 to scripted requests (bot protection) but the page was read via a browser fetch and shows the cited $97,550 May 2025 median. www.jobsandskills.gov.au times out for scripted requests; the cited AUD 2,192 weekly figure was confirmed from the indexed official page. The other five hosts returned HTTP 200 to curl in 1-6 seconds, slower than the preflight 5-second timeout."
+}

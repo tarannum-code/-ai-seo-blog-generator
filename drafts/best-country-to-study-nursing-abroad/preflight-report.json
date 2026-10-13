@@ -1,0 +1,183 @@
+{
+  "draft": "drafts/best-country-to-study-nursing-abroad",
+  "strict": true,
+  "blocked": true,
+  "gates": [
+    {
+      "gate": 1,
+      "name": "Capability Discovery",
+      "passed": true,
+      "violations": [],
+      "warnings": [
+        "live tool availability not provided; MCP image tools cannot be verified from declarations"
+      ],
+      "capabilities": {
+        "live_tools": [],
+        "live_tools_source": "not-provided",
+        "env_keys_present": {
+          "GOOGLE_AI_API_KEY": false,
+          "UNSPLASH_ACCESS_KEY": false,
+          "PEXELS_API_KEY": false,
+          "PIXABAY_API_KEY": false
+        },
+        "python_deps": {
+          "patchright": true,
+          "playwright": false,
+          "weasyprint": false,
+          "google.genai": false,
+          "requests": false,
+          "markdown": true
+        },
+        "project_root_files": {
+          "BRAND.md": true,
+          "VOICE.md": true,
+          "DISCOURSE.md": false
+        },
+        "agents": {
+          "blog-reviewer": true,
+          "blog-researcher": true,
+          "blog-writer": true,
+          "blog-seo": true,
+          "blog-translator": true
+        },
+        "scripts": {
+          "scripts/lint_prose.py": true,
+          "scripts/load_untrusted_root.py": true,
+          "scripts/analyze_blog.py": true
+        },
+        "image_gen_path_available": true,
+        "openverse_assumed_available": true
+      }
+    },
+    {
+      "gate": 2,
+      "name": "Format Completeness",
+      "passed": true,
+      "violations": [],
+      "warnings": [],
+      "artifacts": {
+        "slug": "best-country-to-study-nursing-abroad-in-2026-a-guide-for-indian-nurses",
+        "md": [
+          "best-country-to-study-nursing-abroad-in-2026-a-guide-for-indian-nurses.md"
+        ],
+        "html": [
+          "best-country-to-study-nursing-abroad-in-2026-a-guide-for-indian-nurses.html"
+        ],
+        "pdf": [
+          "best-country-to-study-nursing-abroad-in-2026-a-guide-for-indian-nurses.pdf"
+        ],
+        "hero": [
+          "hero.jpg"
+        ],
+        "review_present": false
+      }
+    },
+    {
+      "gate": 3,
+      "name": "Visual Verification",
+      "passed": true,
+      "violations": [],
+      "warnings": [
+        "backend: patchright"
+      ],
+      "per_viewport": {
+        "mobile": {
+          "result": {
+            "overflows": [],
+            "bg": "rgb(250, 250, 249)",
+            "jsonLdValid": true,
+            "jsonLdType": "BlogPosting",
+            "jsonLdMissingFields": [],
+            "jsonLdVisibleConsistent": true,
+            "jsonLdConsistencyMismatches": [],
+            "jsonLdWordCount": 2224
+          },
+          "console_errors": []
+        },
+        "tablet": {
+          "result": {
+            "overflows": [],
+            "bg": "rgb(250, 250, 249)",
+            "jsonLdValid": true,
+            "jsonLdType": "BlogPosting",
+            "jsonLdMissingFields": [],
+            "jsonLdVisibleConsistent": true,
+            "jsonLdConsistencyMismatches": [],
+            "jsonLdWordCount": 2224
+          },
+          "console_errors": []
+        },
+        "desktop": {
+          "result": {
+            "overflows": [],
+            "bg": "rgb(250, 250, 249)",
+            "jsonLdValid": true,
+            "jsonLdType": "BlogPosting",
+            "jsonLdMissingFields": [],
+            "jsonLdVisibleConsistent": true,
+            "jsonLdConsistencyMismatches": [],
+            "jsonLdWordCount": 2224
+          },
+          "console_errors": [],
+          "back_button": {
+            "attempted_back": true,
+            "observation_complete": true,
+            "returned_to_previous": true,
+            "before_url": "drafts/best-country-to-study-nursing-abroad/best-country-to-study-nursing-abroad-in-2026-a-guide-for-indian-nurses.html",
+            "after_url": "about:blank",
+            "checked": true,
+            "conclusive": true,
+            "obstructed": false,
+            "violation": null
+          }
+        },
+        "desktop-dark": {
+          "bg": "rgb(24, 24, 27)",
+          "light_bg": "rgb(250, 250, 249)"
+        }
+      }
+    },
+    {
+      "gate": 4,
+      "name": "Content Review",
+      "passed": false,
+      "violations": [
+        "review.md absent; orchestrator must dispatch blog-reviewer agent before preflight Gate 4"
+      ],
+      "warnings": []
+    },
+    {
+      "gate": 5,
+      "name": "Asset + Link Integrity",
+      "passed": true,
+      "violations": [],
+      "warnings": [],
+      "imgs": [
+        "hero.jpg",
+        "images/icu-nurses.jpg",
+        "images/operating-theatre.jpg"
+      ],
+      "links_checked": 43,
+      "json_ld_valid": true,
+      "declared_word_count": 2224,
+      "schema_validation_source": "source_html",
+      "actual_word_count": 2224,
+      "googlebot_byte_check": {
+        "limit_bytes": 2097152,
+        "artifact_bytes": 30320,
+        "critical_positions": {
+          "title": 304,
+          "meta": 392,
+          "canonical": 601,
+          "json_ld": 2340,
+          "main_content": 8058
+        },
+        "critical_after_cutoff": [],
+        "inline_bloat_bytes": 5697
+      },
+      "discover_check": {
+        "enabled": false
+      }
+    }
+  ]
+}

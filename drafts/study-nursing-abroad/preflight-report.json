@@ -1,0 +1,98 @@
+{
+  "draft": "drafts/study-nursing-abroad",
+  "strict": true,
+  "blocked": true,
+  "gates": [
+    {
+      "gate": 1,
+      "name": "Capability Discovery",
+      "passed": true,
+      "violations": [],
+      "warnings": [
+        "live tool availability not provided; MCP image tools cannot be verified from declarations",
+        "neither patchright nor playwright installed; Gate 3 will warn-and-pass"
+      ],
+      "capabilities": {
+        "live_tools": [],
+        "live_tools_source": "not-provided",
+        "env_keys_present": {
+          "GOOGLE_AI_API_KEY": false,
+          "UNSPLASH_ACCESS_KEY": false,
+          "PEXELS_API_KEY": false,
+          "PIXABAY_API_KEY": false
+        },
+        "python_deps": {
+          "patchright": false,
+          "playwright": false,
+          "weasyprint": true,
+          "google.genai": false,
+          "requests": true,
+          "markdown": true
+        },
+        "project_root_files": {
+          "BRAND.md": true,
+          "VOICE.md": true,
+          "DISCOURSE.md": false
+        },
+        "agents": {
+          "blog-reviewer": true,
+          "blog-researcher": true,
+          "blog-writer": true,
+          "blog-seo": true,
+          "blog-translator": true
+        },
+        "scripts": {
+          "scripts/lint_prose.py": true,
+          "scripts/load_untrusted_root.py": true,
+          "scripts/analyze_blog.py": true
+        },
+        "image_gen_path_available": true,
+        "openverse_assumed_available": true
+      }
+    },
+    {
+      "gate": 2,
+      "name": "Format Completeness",
+      "passed": true,
+      "violations": [],
+      "warnings": [],
+      "artifacts": {
+        "slug": "study-nursing-abroad-what-it-actually-pays-off-in-2026",
+        "md": [
+          "study-nursing-abroad-what-it-actually-pays-off-in-2026.md"
+        ],
+        "html": [
+          "study-nursing-abroad-what-it-actually-pays-off-in-2026.html"
+        ],
+        "pdf": [
+          "study-nursing-abroad-what-it-actually-pays-off-in-2026.pdf"
+        ],
+        "hero": [
+          "hero.webp",
+          "hero.jpg"
+        ],
+        "review_present": true
+      }
+    },
+    {
+      "gate": 3,
+      "name": "Visual Verification",
+      "passed": true,
+      "violations": [],
+      "warnings": [
+        "neither patchright nor playwright installed; skipping visual checks. Run pip install -e .[presentation] to enable."
+      ]
+    },
+    {
+      "gate": 4,
+      "name": "Content Review",
+      "passed": false,
+      "violations": [
+        "reviewer blocked: 89/100, below the 90 threshold, and one P0 remains: Canada Express Entry CRS/vacancy figures are unsourced in 5 locations with no matching Sources entry, meeting editorial-heuristics.md heuristic 5's fabricated/unsourced-stat P0 bar"
+      ],
+      "warnings": [],
+      "blocking": true,
+      "reason": "89/100, below the 90 threshold, and one P0 remains: Canada Express Entry CRS/vacancy figures are unsourced in 5 locations with no matching Sources entry, meeting editorial-heuristics.md heuristic 5's fabricated/unsourced-stat P0 bar"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Hero image: originally generated for this post (not stock).
+Method: Programmatic composition (Pillow/Python) using Jusst Nursing brand assets.
+Background: solid #DC287F (Jusst Nursing brand pink, per brand-reference.md palette rule).
+Logo: Jusst Nursing_white.png (marketing-creative/logos/), composited top-left per brand contrast rule (white logo on solid pink).
+License: original asset, owned by Jusst Nursing brand context; no external attribution required.
+Note: Openverse/Unsplash/Pexels/Pixabay fallback ladder was attempted first (per blog-delivery-contract hero-image ladder) and failed due to network timeouts to api.openverse.org in this environment; no API keys configured for Google AI/Unsplash/Pexels/Pixabay. Fell back to Option 2 (generated cover) per skills/blog/references/visual-media.md.
