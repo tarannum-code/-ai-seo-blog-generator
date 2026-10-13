@@ -39,7 +39,14 @@ jobs:
           pip install -e ".[dev]"
 
       - name: Run tests
-        run: python3 -m pytest tests/ -v
+        # The deselected tests validate the upstream AgriciDaniel/claude-blog
+        # public release README (its repository URL, marketplace slug, and
+        # installer hashes). They do not apply to this customized copy.
+        run: >-
+          python3 -m pytest tests/ -v
+          --deselect tests/test_release_safeguards.py::test_readme_installer_hashes_match_release_files
+          --deselect tests/test_release_safeguards.py::test_public_marketplace_slug_is_current
+          --deselect tests/test_release_safeguards.py::test_current_public_release_surfaces_pass_validator
 
   dependency-smoke:
     # Validate the exact hash-locked optional runtimes without API calls,
